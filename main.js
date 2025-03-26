@@ -1,10 +1,12 @@
 var typed = new Typed(".text", {
-    strings: ["Frontend Developer", "Programmer","Designer"],
-    typeSpeed: 100,
+    strings: ["Frontend Developer.", "Programmer.","Designer.","Python Developer."],
+    typeSpeed: 50,
     backSpeed: 100,
     backDelay: 1000,
-    loop: true
+    loop: true,
+    showCursor: false
   });
+  
   // Navigation menu toggle
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".navbar");
