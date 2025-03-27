@@ -299,14 +299,15 @@ footer{
   .about {
     padding: 50px 0;
     margin: 23px;
-    background-color: #dfb2ff;
+    background-color: #08022a85;
   }
   
   .about .section-title {
     margin-bottom: 30px;
-    color: #002360;
+    color: #d4e1f9;
     text-align: center;
     text-decoration:underline;
+    font-size: 23px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
   }
@@ -335,7 +336,7 @@ footer{
     left: 0.1px;
     right: 0;
     bottom:0;
-    border: 7px solid rgb(66, 0, 86); /* Adjust border width and color as needed */
+    border: 13px solid #8870c4; /* Adjust border width and color as needed */
     border-radius: 50%; /* Makes it a circle */
     pointer-events: none; 
     rotate: 60deg;
@@ -369,19 +370,24 @@ footer{
   
   .about .content p {
     font-size: 23px;
-    color: #002360;
-    margin-bottom: 20px;
-    padding: 21px;
+    color: #fbe9e9;
+    margin: 23px;
+    padding: 50px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    background-color: #a4b2f987;
+    border-radius: 23px;
+    box-shadow: 0 13px 10px rgba(150, 55, 55, 0.1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
   }
   
   .interests {
-    background-color: #290048;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(150, 55, 55, 0.1);
+    background-color: #a4b2f987;
+    padding: 50px;
+    margin: 23px;
+    border-radius: 23px;
+    box-shadow: 0 13px 10px rgba(150, 55, 55, 0.1);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
@@ -389,18 +395,19 @@ footer{
     margin-bottom: 20px;
   }
   .interests .icon-box {
-    background-color: #f6d8ff;
+    background-color: #0c0128;
     margin: 13px;
     padding: 21px;
     border-radius: 23px;
-    box-shadow: 0 10px 10px rgba(45, 6, 6, 0.1);
+    box-shadow: 0 10px 10px rgba(210, 189, 189, 0.1);
     box-sizing:initial;
   }
   
   .interests .icon-box h3 {
     font-size: 18px;
-    color: #635b5b;
-    margin-bottom: 10px;
+    color: #fbe9e9;
+    margin: 0px 10px;
+    padding: 13px;
   }
       
   
