@@ -11,6 +11,31 @@ body {
     color: azure;
     font-family: 'Poppins', sans-serif;
 }
+nav{
+    display: flex;
+    justify-content:space-around;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    
+    color:rgb(189, 189, 247);
+    font-size: 1.1rem;
+}
 
 .firstsection{
     display: flex;
@@ -57,31 +82,7 @@ body {
     
 
 
-nav{
-    display: flex;
-    justify-content:space-around;
-    height: 80px;
-    background-color: rgb(18, 18, 62);
-    align-items: center;
-}
 
-nav ul {
-    display: flex;
-    justify-content: center;
-}
-nav ul li{
-    list-style: none;
-    margin: 0 23px;
-}
-nav ul li a{
-    text-decoration: none;
-    color: white;
-}
-nav ul li a:hover{
-    
-    color:rgb(189, 189, 247);
-    font-size: 1.1rem;
-}
 .left{
     font: 1.5rem;
 }
@@ -149,6 +150,9 @@ footer{
     display: flex;
     padding: 23px 122px;
     justify-content: space-evenly;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 .footer ul{
     list-style: none;
@@ -156,9 +160,247 @@ footer{
 .footer > div{
  width: 223px;
 }
-footer .footer-right{
+.footer .footer-left .footerright{
  text-align: center;
  color: gray;
  padding: 0 12px;
 
+
+  
+  .footer .contact-info {
+    margin-bottom: 10px;
+  }
+  
+  .footer .contact-info .address {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .footer .contact-info .social-profiles {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer .contact-info .social-profiles li {
+    margin-right: 10px;
+  }
+  
+  .footer .contact-info .social-profiles li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer .contact-info .social-profiles li a:hover {
+    color: #ccc;
+  }
+  
+  .footer .contact-info .email {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .footer .contact-info .phone {
+    font-size: 14px;
+  }
+  
+ 
+  
+  
 }
+
+.portfolio {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  .portfolio .section-title {
+    margin-bottom: 30px;
+  }
+  
+  .portfolio #portfolio-flters {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .portfolio #portfolio-flters li {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .portfolio #portfolio-flters li.filter-active {
+    color: #0099ff;
+  }
+  
+  .portfolio .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .portfolio .portfolio-item {
+    margin: 10px;
+    width: calc(33.33% - 20px);
+  }
+  
+  .portfolio .portfolio-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .portfolio .portfolio-wrap img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info a:hover {
+    color: #ccc;
+  }
+  
+  .portfolio .portfolio-wrap h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .portfolio .portfolio-item {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .portfolio .portfolio-item {
+      width: 100%;}
+  }
+  .about {
+    padding: 50px 0;
+    margin: 23px;
+    background-color: #dfb2ff;
+  }
+  
+  .about .section-title {
+    margin-bottom: 30px;
+    color: #002360;
+    text-align: center;
+    text-decoration:underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  }
+  
+  .about .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .about .image-container {
+    margin-bottom: 20px;
+  }
+ 
+  .image-container {
+    position:relative;/* Needed for absolute positioning of the pseudo-element */
+    display:block; 
+    width: 300px;
+    height: 400px;/* Or block, depending on your layout */
+  }
+  
+  .image-container::before {
+    content: '';
+    position:absolute;
+    top:13%;
+    left: 0.1px;
+    right: 0;
+    bottom:0;
+    border: 7px solid rgb(66, 0, 86); /* Adjust border width and color as needed */
+    border-radius: 50%; /* Makes it a circle */
+    pointer-events: none; 
+    rotate: 60deg;
+    /* Prevents the circle from interfering with clicks */
+  }
+  
+  .image-container img {
+    display: flex; /* Ensures the image respects the container's dimensions */
+    max-width: 60%; /* Makes the image responsive */
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: contain;
+    position:absolute;
+  }
+  
+ 
+  
+  .about img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .about .content {
+    margin-top: 20px;
+    padding: 21px;
+  }
+  
+  .about .content p {
+    font-size: 23px;
+    color: #002360;
+    margin-bottom: 20px;
+    padding: 21px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+   
+  }
+  
+  .interests {
+    background-color: #290048;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(150, 55, 55, 0.1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .interests .section-title {
+    margin-bottom: 20px;
+  }
+  .interests .icon-box {
+    background-color: #f6d8ff;
+    margin: 13px;
+    padding: 21px;
+    border-radius: 23px;
+    box-shadow: 0 10px 10px rgba(45, 6, 6, 0.1);
+    box-sizing:initial;
+  }
+  
+  .interests .icon-box h3 {
+    font-size: 18px;
+    color: #635b5b;
+    margin-bottom: 10px;
+  }
+      
+  
